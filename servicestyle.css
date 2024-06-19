@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    transition: all .45s ease;
+    scroll-behavior: smooth;        /*So it can scroll smooth*/
+}
+body{
+    display: grid;
+    grid-template-rows: 0.5fr 2.2fr 0.1fr;
+    
+}
+#headsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(nicolas-thomas-3GZi6OpSDcY-unsplash.jpg);
+    
+}
+
+.us{
+    padding: 3%;
+    margin-top: 12%;
+    font-size: 40px;
+    margin-left: -13%;
+    color: antiquewhite;
+}
+#headsection img:hover{
+    transform: scale(1.1);
+}
+.content{
+    background-color:rgba(0, 0, 0, 0.618);
+    padding: 2%;
+    
+}
+.fa-angle-up{
+    font-size: 40px;
+    margin-left: 48.5%;
+    color: white;
+}
+
+.more{
+    background-color:rgba(0, 0, 0, 0.781);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3%;
+    
+}
+.bulb{
+    margin-top: -2%;
+}
+
+.fa-location-dot{
+    text-decoration: none;
+    color: #e61313;
+}
+@media screen and (max-width: 600px) {
+    .us{
+        padding: 3%;
+        margin-top: 32%;
+        font-size: 25px;
+        margin-left: -33%;
+        color: antiquewhite;
+    }
+    #headsection img{
+        width: 80%;
+    }
+    .content{
+        padding: 8%;
+    }
+    .more{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bulb{
+        width: 200%;
+    }
+
+}

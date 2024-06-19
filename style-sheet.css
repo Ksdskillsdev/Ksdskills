@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    transition: all .45s ease;
+    scroll-behavior: smooth;        /*So it can scroll smooth*/
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.1fr 0.1fr;
+    animation : showpic 4s 0s ease forwards ;
+    opacity: 0;
+    grid-gap: 0em;
+   
+}
+
+@keyframes showpic {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#homepg{
+    width:"fit-content";
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(homepic.jpg);
+    padding: 10px 8%;
+    position: relative;
+    text-align: right;
+    padding-top: 5%;
+}
+#homepg img{
+    margin-top: -8%;
+    float: left;
+    margin-left: -10%;
+}
+#homepg img:hover{
+    transform: scale(1.1);
+}
+#homepg h1{
+    text-align: center;
+    color: white;
+    margin-top: 17%;
+    
+}
+#homepg h1:hover{
+color: orangered;
+
+/*ATTENTION NEEDED*/
+}
+#homepg h2{
+    text-align: center;
+    color: white;
+}
+#homepg h2:hover{
+    color: rgb(25, 100, 19);
+    animation: reverse; /*ATTENTION NEEDED*/
+    }
+
+button{
+    padding: 1%;
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: rgba(178, 178, 183, 0.842);
+}
+button:hover{
+    background: greenyellow;
+}
+
+#Aboutus{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 3%;
+    grid-gap: 2em;
+    background-color:rgba(0, 0, 0, 0.618);
+    color: white;
+}
+.fa-angle-up{
+    font-size: 40px;
+    margin-left: 48.5%;
+    color: white;
+    
+}
+#contactus{
+    margin-top: -22%; 
+    padding: 3%;
+    color: white;
+}
+#mayl{
+    margin-left: 4%;
+}
+.mayl{
+    text-decoration: none;
+    color: #4CC9F0;
+}
+.tel{
+    text-decoration: none;
+    color: #4CC9F0;
+}
+#more{
+    background-color:rgba(0, 0, 0, 0.781);
+    margin-top: -4.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3%;
+    
+}
+.bulb{
+    margin-top: -2%;
+}
+
+.fa-location-dot{
+    text-decoration: none;
+    color: #e61313;
+}
+.fa-square-envelope{
+    color: #0f9ec9;
+}
+.fa-phone{
+    color: #0f9ec9;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-rows: 1fr 1fr 0.1fr 0.1fr; /* Adjust the grid template rows for smaller screens */
+    }
+
+    #homepg {
+        padding: 10px 5%; /* Adjust the padding for smaller screens */
+        
+    }
+
+    #homepg img {
+        width: 70%; /* Scale down the logo image */
+        height: 40%;
+        margin-left: 18%; /* Adjust the margin for smaller screens */
+        margin-top: 30%;
+    }
+
+    #homepg h1 {
+        margin-top: 10%; /* Adjust the margin for smaller screens */
+    }
+
+    button {
+        padding: 0.5em; /* Size down the buttons */
+    }
+
+    #Aboutus {
+        
+        grid-template-columns: 1fr; /* Adjust the grid template columns for smaller screens */
+        padding: 3%;
+        margin-top: -40%;
+       
+        
+    }
+    #Aboutus p{
+        margin-top: 13%;
+    }
+    .pic img {
+        margin-top: 0%;
+        width: 100%; /* Scale down the image in the Aboutus section */
+        
+    }
+
+    #contactus {
+        margin-left: 0%;
+        background-color:rgba(0, 0, 0, 0.618);
+        margin-top: 0%; /* Adjust the margin for smaller screens */
+       
+    }
+   
+    #more {
+        margin-top: 0%;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Adjust the grid template columns for smaller screens */
+        padding: 3%;
+    }
+
+    .bulb img {
+        width: 100%; /* Scale down the image in the More section */
+        height: 50%;
+        margin-left: 10%;
+    }
+}
+/* tablet*/
+@media screen and (max-width:1480px) and (min-width:600px) {
+    #Aboutus{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #contactus{
+        margin-top: 0%;
+        background-color:rgba(0, 0, 0, 0.618);
+        margin-bottom: 4.2%;
+    }
+    
+}
+
+@media screen and (max-width:820px) and (min-width:600px){
+
+    #contactus{
+        margin-top: 0%;
+        background-color:rgba(0, 0, 0, 0.618);
+        margin-bottom: 21%;
+        margin-left: -1%;
+    }
+    .pic img{
+        height: auto;
+    }
+    #more{
+        margin-top: -21%;
+    }
+}
+
+@media screen and (max-width:630px) and (min-width:150px){
+
+}
+@media screen and (max-width: 400px){
+
+    #Aboutus {
+        
+        grid-template-columns: 1fr; /* Adjust the grid template columns for smaller screens */
+        padding: 3%;
+        margin-top: -60%;
+        
+    }
+    #Aboutus p{
+        margin-top: 15%;
+        
+    }
+}
